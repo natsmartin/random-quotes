@@ -1,0 +1,45 @@
+.quotes-container {
+    background-color: #8a2be2;
+    min-height: 40vh;
+    display: block;
+    text-align: center;
+    margin: 3rem;
+}
+
+.generate-button {
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 0.6rem;
+    background-color: #DCDE16;
+    color: #000000;
+    margin: 0.6rem;
+    transition: transform 500ms;
+}
+
+.generate-button:focus {
+    background-color: #ffffff;
+    color: #320064;
+}
+
+.generate-button:hover {
+    background-color: #320064;
+    color: #ffffff;
+    transform: scale(1.25);
+}
+
+.loading-text {
+    text-align: center;
+    color: #000;
+}
+
+.text-container {
+    font-size: 2rem;
+    border-radius: 15px;
+    height: 400px;
+    background-color: #e9d1ff;
+    color: #000000;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

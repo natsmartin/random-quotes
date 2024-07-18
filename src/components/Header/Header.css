@@ -1,0 +1,15 @@
+.app-header {
+    background-color: #320064;
+    color: white;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  
+  .app-header p {
+    font-size: 3rem;
+    font-weight: bold;
+  }
