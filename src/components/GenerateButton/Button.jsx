@@ -7,7 +7,7 @@ function GenerateButton() {
 
   return (
     <div className="generate-button-container">
-      <button className="generate-button" onClick={(e) => dispatch(fetchTodos())} >Generate</button>
+      <button className="generate-button" onClick={() => dispatch(fetchTodos())} >Generate</button>
     </div>
   )
 }
