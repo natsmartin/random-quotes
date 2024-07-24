@@ -1,5 +1,6 @@
 .generate-button-container {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 20px;
+    text-align: center;
 }
