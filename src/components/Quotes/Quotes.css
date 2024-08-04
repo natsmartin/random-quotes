@@ -3,7 +3,7 @@
     min-height: 40vh;
     display: block;
     text-align: center;
-    margin: 3rem;
+    margin: 0 3rem;
 }
 
 .generate-button {
@@ -35,11 +35,12 @@
 .text-container {
     font-size: 2rem;
     border-radius: 15px;
-    height: 400px;
+    /* height: 400px; */
     background-color: #e9d1ff;
     color: #000000;
     padding: 12px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }

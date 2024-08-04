@@ -6,29 +6,30 @@ import { useSelector } from 'react-redux'
 function Quotes() {
 
     const state = useSelector((state) => state)
-    console.log(state)
+    console.log(state.todo);
+    const dataArr = state.todo.data;
 
-    const quotesArr = state.todo.data
-    const dataLength = state.todo.data !== null ? state.todo.data.length - 1 : 0
-
-    let randomQuote = ""
-
-    if (dataLength > 0) {
-        randomQuote = quotesArr[Math.floor(Math.random() * dataLength)].text
-            .concat(" -", quotesArr[Math.floor(Math.random() * dataLength)].author)
-            .replace(", type.fit", "")
+    if (state.todo.isLoading) {
+        return (
+        <div key='text-container' className="text-container">
+            <p className="quotes-text" >Loading . . .</p>
+        </div>
+        )
     }
 
     return (
         <div className="quotes-container">
-            <div className="text-container">
-                {
-                    state.todo.isLoading ?
-                        <p className="loading-text">Loading ...</p> :
-                        <p className="quotes-text">{randomQuote}</p>
-                }
-            </div>
-        </div>
+            {
+                dataArr?.map((data, index) => {
+                    return (
+                        <div key={'text-container'+index} className="text-container">
+                            <p className="quotes-text" > {data.q.concat(' -', data.a)}</p>
+                        </div>
+                    )
+                })
+
+            }
+        </div >
     )
 }
 

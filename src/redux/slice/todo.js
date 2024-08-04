@@ -1,8 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchTodos = createAsyncThunk('fetchTodos', async () => {
-    const response = await fetch('https://type.fit/api/quotes')
-    return response.json();
+    const response = await fetch('https://zenquotes.io/api/quotes/')
+    const data = await response.json();
+    return data;
 })
 
 const initialQuoteState = {
