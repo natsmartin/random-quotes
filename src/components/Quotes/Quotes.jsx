@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 function Quotes() {
 
     const state = useSelector((state) => state)
-    console.log(state.todo);
+    // console.log(state.todo);
     const dataArr = state.todo.data;
 
     if (state.todo.isLoading) {

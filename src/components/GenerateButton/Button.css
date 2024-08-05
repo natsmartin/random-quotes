@@ -4,3 +4,7 @@
     margin: 20px;
     text-align: center;
 }
+
+.generate-button-container p {
+    color: white;
+}
